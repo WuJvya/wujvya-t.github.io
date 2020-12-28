@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="一、数据库1、创建触感建数据库： 1create database 数据库名 [character set 字符集][collate 校对规则] 注：[]是可选意思 2、查看查看所有数据库： 1show database; 查看数据库的定义结构： 1show create database 数据库名; 3、删除删除数据库： 1drop database 数据库名; 4、修改修改数据库： 1alte">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2020/12/28/MySQL%E8%AF%AD%E5%8F%A5/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="一、数据库1、创建触感建数据库： 1create database 数据库名 [character set 字符集][collate 校对规则] 注：[]是可选意思 2、查看查看所有数据库： 1show database; 查看数据库的定义结构： 1show create database 数据库名; 3、删除删除数据库： 1drop database 数据库名; 4、修改修改数据库： 1alte">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-12-28T06:57:14.452Z">
+<meta property="article:modified_time" content="2020-12-28T06:57:14.452Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-MySQL语句" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/12/28/MySQL%E8%AF%AD%E5%8F%A5/" class="article-date">
+  <time class="dt-published" datetime="2020-12-28T06:57:14.452Z" itemprop="datePublished">2020-12-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="一、数据库"><a href="#一、数据库" class="headerlink" title="一、数据库"></a>一、数据库</h1><h2 id="1、创建"><a href="#1、创建" class="headerlink" title="1、创建"></a>1、创建</h2><p>触感建数据库：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> database 数据库名 [<span class="type">character</span> <span class="keyword">set</span> 字符集][<span class="keyword">collate</span> 校对规则]</span><br></pre></td></tr></table></figure>
+<p>注：[]是可选意思</p>
+<h2 id="2、查看"><a href="#2、查看" class="headerlink" title="2、查看"></a>2、查看</h2><p>查看所有数据库：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">show</span> database;</span><br></pre></td></tr></table></figure>
+<p>查看数据库的定义结构：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">show</span> <span class="keyword">create</span> database 数据库名;</span><br></pre></td></tr></table></figure>
+<h2 id="3、删除"><a href="#3、删除" class="headerlink" title="3、删除"></a>3、删除</h2><p>删除数据库：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">drop</span> database 数据库名;</span><br></pre></td></tr></table></figure>
+<h2 id="4、修改"><a href="#4、修改" class="headerlink" title="4、修改"></a>4、修改</h2><p>修改数据库：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">alter</span> database 数据库名 <span class="type">character</span> <span class="keyword">set</span> 字符集;</span><br></pre></td></tr></table></figure>
+<p>注意：字符集中utf-8写作utf8,修改不是修改数据库名，修改数据库名有点麻烦，不能直接修改。</p>
+<h1 id="二、数据表"><a href="#二、数据表" class="headerlink" title="二、数据表"></a>二、数据表</h1><h2 id="1、创建-1"><a href="#1、创建-1" class="headerlink" title="1、创建"></a>1、创建</h2><p>创建数据表：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">create table 表名(</span><br><span class="line">	字段 类型 [约束],</span><br><span class="line">	字段 类型 [约束],</span><br><span class="line">	...</span><br><span class="line">	字段 类型 [约束]</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+
+
+<p>字符串类型</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>类型</td>
+<td>范围</td>
+<td>说明</td>
+<td>示例</td>
+</tr>
+<tr>
+<td>Char(N)[ binary]</td>
+<td>N=1~255 个字节binary ：分辨大小写</td>
+<td>固定长度</td>
+<td>std_name cahr(32) not null</td>
+</tr>
+<tr>
+<td>VarChar(N)[binary]</td>
+<td>N=1~255 个字节</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>binary ：分辨大小写</td>
+<td>可变长度</td>
+<td>std_address varchar(256)</td>
+<td></td>
+</tr>
+<tr>
+<td>TinyBlob</td>
+<td>最大长度255个字节(2^8-1)</td>
+<td>Blob (Binary large objects)储存二进位资料，且有分大小写</td>
+<td>memo text not null</td>
+</tr>
+<tr>
+<td>TinyText</td>
+<td>最大长度255个字节(2^8-1)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Blob</td>
+<td>最大长度65535个字节(2^16-1)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Text</td>
+<td>最大长度65535个字节(2^16-1)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>MediumBlob</td>
+<td>最大长度 16777215 个字节(2^24-1)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>MediumText</td>
+<td>最大长度 16777215 个字节(2^24-1)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>LongBlob</td>
+<td>最大长度4294967295个字节 (2^32-1)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>LongText</td>
+<td>最大长度4294967295个字节 (2^32-1)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Enum</td>
+<td>集合最大数目为65535</td>
+<td>列举(Enumeration)，Enum单选、Set复选</td>
+<td>sex enum(1,0)habby set(‘玩电玩’,’睡觉’,’看电影’,’听音乐’)</td>
+</tr>
+<tr>
+<td>Set</td>
+<td>集合最大数目为64</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>辨别Null与Not Null：Null为允许储存空值（Null）</p>
+<p>数字/数值类型：</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>范围</th>
+<th>说明</th>
+<th>例如</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>TinyInt[M][UNSIGNED]</td>
+<td>-128<del>127UNSIGNED ： 0</del>255</td>
+<td></td>
+<td>num tinyint unsigned</td>
+</tr>
+<tr>
+<td>SmallInt[M][UNSIGNED]</td>
+<td>-32768<del>32767UNSIGNED ：0</del> 65535</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>MediumInt[M][UNSIGNED]</td>
+<td>-8388608<del>8388607UNSIGNED ：0</del>16777215</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Int[M][UNSIGNED]</td>
+<td>-2^31<del>2^31-1UNSIGNED ： 0</del>2^32</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>BigInt[M][UNSIGNED]</td>
+<td>-2^63<del>2^63-1UNSIGNED ： 0</del>2^64</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Float[(M,D)]</td>
+<td>-3.4E+38~3.4E+38( 约 )</td>
+<td>注：M为长度，D为小数，Float 4 bytes,Double 8 bytes</td>
+<td></td>
+</tr>
+<tr>
+<td>Double[(M,D)]</td>
+<td>-1.79E+308~1.79E+308( 约 )</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Decimal[(M,D)]</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>日期时间类型</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>范围</th>
+<th>说明</th>
+<th>举例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Date</td>
+<td>日期(yyyy-mm-dd)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Time</td>
+<td>时间(hh:mm:ss)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>DateTime</td>
+<td>日期与时间組合(yyyy-mm-dd hh:mm:ss)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>TimeStamp</td>
+<td>yyyymmddhhmmss</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Year</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>约束</p>
+<table>
+<thead>
+<tr>
+<th>约束</th>
+<th>约束关键字</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>主键</td>
+<td>primary key</td>
+</tr>
+<tr>
+<td>唯一</td>
+<td>unique</td>
+</tr>
+<tr>
+<td>非空</td>
+<td>not null</td>
+</tr>
+</tbody></table>
+<ul>
+<li><p>not null: 非空 ;  eg:  username varchar(40)  not null    username这个字段不能为空,必须要有数据</p>
+</li>
+<li><p>unique:唯一约束, 后面的数据不能和前面重复;  eg: cardNo char(18) unique;    cardNo字段不能出现重复的数据</p>
+</li>
+<li><p>primary key；主键约束(非空+唯一);    一般用在表的id列上面.  一张表基本上都有id列的, id列作为唯一标识的 </p>
+<ul>
+<li>auto_increment: ==自动增长,必须是设置了primary key之后,才可以使用</li>
+</ul>
+</li>
+<li><p>id int  primary key   auto_increment;  id不需要我们自己维护了, 插入数据的时候直接插入null, 自动的增长进行填充进去, 避免重复了.  </p>
+</li>
+</ul>
+<p>注意:</p>
+<ol>
+<li><p>先设置了primary key 再能设置auto_increment</p>
+</li>
+<li><p>只有当设置了auto_increment 才可以插入null 自己维护 否则插入null会报错</p>
+</li>
+</ol>
+<h2 id="2、查看-1"><a href="#2、查看-1" class="headerlink" title="2、查看"></a>2、查看</h2><p>查看所有表</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">show</span> tables;</span><br></pre></td></tr></table></figure>
+<p>查看表的定义结构</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">desc</span> 表名;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/12/28/MySQL%E8%AF%AD%E5%8F%A5/" data-id="ckj87mr9h0000btjx4k2k6j6z" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2020/12/27/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">我的第一篇博客文章</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/12/28/MySQL%E8%AF%AD%E5%8F%A5/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/12/27/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">我的第一篇博客文章</a>
+          </li>
+        
+          <li>
+            <a href="/2020/12/27/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2020 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
